@@ -7,7 +7,7 @@ var args = process.argv;
   
 args.forEach((val, index) => {
     //arr.push(val);
-    if (index > 1) {
+    if (index > 1 && typeof val == 'number' && val > 0) {
     setTimeout(() => {
       process.stdout.write('\x07');
       //process.stdout.write(val);
